@@ -5,7 +5,7 @@ Simular una conexion cliente - servidor de nombres para resolver una ruta jerarq
 
 ## Componentes
 
-### Servidor de nombres 1: root
+### Servidor de nombres 1 (root)
 Encargado de gestionar la comunicacion con el cliente. Recibe el nombre y devuelve una ruta al recurso solicitado o 404 si no encuentra ninguna registrada bajo ese nombre en ninguno de los servidores disponibles. Se comunica con servidores de nombres de jerarquias menores si no encuentra en su tabla de rutas.   
 
 ### Servidor de nombres 2
@@ -28,3 +28,4 @@ Esta pensado para ejecutar directamente en la terminal usando node o el equivale
     ```bash
    node client.js
    ```
+Finalmente, se pueden ver tanto en el cliente las rutas obtenidas como en el servidor las redirecciones resueltas.
