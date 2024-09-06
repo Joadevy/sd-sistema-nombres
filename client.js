@@ -17,7 +17,13 @@ async function resolverNombre(nombre) {
 }
 
 // Ejemplos de resolución de nombres
-resolverNombre("/sistema/archivos/documentos/reporte.txt");
-resolverNombre("/procesos/12345");
-resolverNombre("/servicios/desconocido");
-resolverNombre("/ejemplo-no-encontrado");
+resolverNombre("/ruta-simple");
+resolverNombre("/ejemplo/1");
+resolverNombre("/test/2");
+resolverNombre("/ejemplo/4/a");
+resolverNombre("/test/4/b");
+
+// Ejemplos de resoluciones no exitosas
+resolverNombre("/servidor-desconocido");
+resolverNombre("/ejemplo/not-found");
+resolverNombre("/test/4/not-found");
